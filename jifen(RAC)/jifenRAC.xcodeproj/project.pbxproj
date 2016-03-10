@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64FC9E3C5921E3E6F3C3A62C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9D18BB25884048E63905BB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AE78DFD81C915D590041AE1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE78DFD71C915D590041AE1F /* main.m */; };
+		AE78DFE11C915D590041AE1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE78DFDF1C915D590041AE1F /* Main.storyboard */; };
+		AE78DFE31C915D590041AE1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE78DFE21C915D590041AE1F /* Assets.xcassets */; };
+		AE78DFE61C915D590041AE1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE78DFE41C915D590041AE1F /* LaunchScreen.storyboard */; };
+		AE78DFF11C915D590041AE1F /* jifen_RAC_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE78DFF01C915D590041AE1F /* jifen_RAC_Tests.m */; };
+		AE78DFFC1C915D590041AE1F /* jifen_RAC_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE78DFFB1C915D590041AE1F /* jifen_RAC_UITests.m */; };
+		AE78E0141C915DD70041AE1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE78E00B1C915DD70041AE1F /* ViewController.m */; };
+		AE78E0151C915DD70041AE1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE78E0101C915DD70041AE1F /* AppDelegate.m */; };
+		AE78E01D1C916F840041AE1F /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AE78E01C1C916F840041AE1F /* video1.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE78DFED1C915D590041AE1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE78DFCB1C915D590041AE1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE78DFD21C915D590041AE1F;
+			remoteInfo = "jifen(RAC)";
+		};
+		AE78DFF81C915D590041AE1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE78DFCB1C915D590041AE1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE78DFD21C915D590041AE1F;
+			remoteInfo = "jifen(RAC)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E9D69E5040365F83C5B2CA1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		92677EA37C9C43A73E9B7A7A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AE78DFD31C915D590041AE1F /* jifenRAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jifenRAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE78DFD71C915D590041AE1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE78DFE01C915D590041AE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE78DFE21C915D590041AE1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE78DFE51C915D590041AE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE78DFE71C915D590041AE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE78DFEC1C915D590041AE1F /* jifenRAC.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jifenRAC.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE78DFF01C915D590041AE1F /* jifen_RAC_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jifen_RAC_Tests.m; sourceTree = "<group>"; };
+		AE78DFF21C915D590041AE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE78DFF71C915D590041AE1F /* jifenRAC.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jifenRAC.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE78DFFB1C915D590041AE1F /* jifen_RAC_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jifen_RAC_UITests.m; sourceTree = "<group>"; };
+		AE78DFFD1C915D590041AE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE78E00A1C915DD70041AE1F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AE78E00B1C915DD70041AE1F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AE78E00F1C915DD70041AE1F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE78E0101C915DD70041AE1F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE78E0161C9160430041AE1F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		AE78E01C1C916F840041AE1F /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		CC9D18BB25884048E63905BB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE78DFD01C915D590041AE1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64FC9E3C5921E3E6F3C3A62C /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE78DFE91C915D590041AE1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE78DFF41C915D590041AE1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		240A57225CFEEADCB05D3C52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92677EA37C9C43A73E9B7A7A /* Pods.debug.xcconfig */,
+				2E9D69E5040365F83C5B2CA1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5AC27C7E3871894140F5DCF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC9D18BB25884048E63905BB /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE78DFCA1C915D590041AE1F = {
+			isa = PBXGroup;
+			children = (
+				AE78DFD51C915D590041AE1F /* jifen(RAC) */,
+				AE78DFEF1C915D590041AE1F /* jifen(RAC)Tests */,
+				AE78DFFA1C915D590041AE1F /* jifen(RAC)UITests */,
+				AE78DFD41C915D590041AE1F /* Products */,
+				240A57225CFEEADCB05D3C52 /* Pods */,
+				5AC27C7E3871894140F5DCF5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE78DFD41C915D590041AE1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE78DFD31C915D590041AE1F /* jifenRAC.app */,
+				AE78DFEC1C915D590041AE1F /* jifenRAC.xctest */,
+				AE78DFF71C915D590041AE1F /* jifenRAC.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE78DFD51C915D590041AE1F /* jifen(RAC) */ = {
+			isa = PBXGroup;
+			children = (
+				AE78E0091C915DD70041AE1F /* Controller */,
+				AE78E00C1C915DD70041AE1F /* Model */,
+				AE78E00D1C915DD70041AE1F /* NetService */,
+				AE78E00E1C915DD70041AE1F /* Other */,
+				AE78E0111C915DD70041AE1F /* Tool */,
+				AE78E0121C915DD70041AE1F /* View */,
+				AE78E0131C915DD70041AE1F /* ViewModel */,
+				AE78DFD61C915D590041AE1F /* Supporting Files */,
+			);
+			path = "jifen(RAC)";
+			sourceTree = "<group>";
+		};
+		AE78DFD61C915D590041AE1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE78DFDF1C915D590041AE1F /* Main.storyboard */,
+				AE78DFE21C915D590041AE1F /* Assets.xcassets */,
+				AE78DFE41C915D590041AE1F /* LaunchScreen.storyboard */,
+				AE78DFE71C915D590041AE1F /* Info.plist */,
+				AE78DFD71C915D590041AE1F /* main.m */,
+				AE78E0161C9160430041AE1F /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE78DFEF1C915D590041AE1F /* jifen(RAC)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AE78DFF01C915D590041AE1F /* jifen_RAC_Tests.m */,
+				AE78DFF21C915D590041AE1F /* Info.plist */,
+			);
+			path = "jifen(RAC)Tests";
+			sourceTree = "<group>";
+		};
+		AE78DFFA1C915D590041AE1F /* jifen(RAC)UITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE78DFFB1C915D590041AE1F /* jifen_RAC_UITests.m */,
+				AE78DFFD1C915D590041AE1F /* Info.plist */,
+			);
+			path = "jifen(RAC)UITests";
+			sourceTree = "<group>";
+		};
+		AE78E0091C915DD70041AE1F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE78E0181C9168220041AE1F /* welcome（欢迎页） */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AE78E00C1C915DD70041AE1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE78E00D1C915DD70041AE1F /* NetService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetService;
+			sourceTree = "<group>";
+		};
+		AE78E00E1C915DD70041AE1F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				AE78E00F1C915DD70041AE1F /* AppDelegate.h */,
+				AE78E0101C915DD70041AE1F /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		AE78E0111C915DD70041AE1F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		AE78E0121C915DD70041AE1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE78E0131C915DD70041AE1F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AE78E0181C9168220041AE1F /* welcome（欢迎页） */ = {
+			isa = PBXGroup;
+			children = (
+				AE78E01C1C916F840041AE1F /* video1.mp4 */,
+				AE78E00A1C915DD70041AE1F /* ViewController.h */,
+				AE78E00B1C915DD70041AE1F /* ViewController.m */,
+			);
+			name = "welcome（欢迎页）";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE78DFD21C915D590041AE1F /* jifenRAC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE78E0001C915D590041AE1F /* Build configuration list for PBXNativeTarget "jifenRAC" */;
+			buildPhases = (
+				D0AFA02CE4A7248706E703B8 /* Check Pods Manifest.lock */,
+				AE78DFCF1C915D590041AE1F /* Sources */,
+				AE78DFD01C915D590041AE1F /* Frameworks */,
+				AE78DFD11C915D590041AE1F /* Resources */,
+				02A167ABCCB5CF0C05D1B524 /* Embed Pods Frameworks */,
+				D2C22FADA35FCC0901088DBA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jifenRAC;
+			productName = "jifen(RAC)";
+			productReference = AE78DFD31C915D590041AE1F /* jifenRAC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE78DFEB1C915D590041AE1F /* jifenRACTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE78E0031C915D590041AE1F /* Build configuration list for PBXNativeTarget "jifenRACTests" */;
+			buildPhases = (
+				AE78DFE81C915D590041AE1F /* Sources */,
+				AE78DFE91C915D590041AE1F /* Frameworks */,
+				AE78DFEA1C915D590041AE1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE78DFEE1C915D590041AE1F /* PBXTargetDependency */,
+			);
+			name = jifenRACTests;
+			productName = "jifen(RAC)Tests";
+			productReference = AE78DFEC1C915D590041AE1F /* jifenRAC.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE78DFF61C915D590041AE1F /* jifenRACUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE78E0061C915D590041AE1F /* Build configuration list for PBXNativeTarget "jifenRACUITests" */;
+			buildPhases = (
+				AE78DFF31C915D590041AE1F /* Sources */,
+				AE78DFF41C915D590041AE1F /* Frameworks */,
+				AE78DFF51C915D590041AE1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE78DFF91C915D590041AE1F /* PBXTargetDependency */,
+			);
+			name = jifenRACUITests;
+			productName = "jifen(RAC)UITests";
+			productReference = AE78DFF71C915D590041AE1F /* jifenRAC.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE78DFCB1C915D590041AE1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = hxy;
+				TargetAttributes = {
+					AE78DFD21C915D590041AE1F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					AE78DFEB1C915D590041AE1F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = AE78DFD21C915D590041AE1F;
+					};
+					AE78DFF61C915D590041AE1F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = AE78DFD21C915D590041AE1F;
+					};
+				};
+			};
+			buildConfigurationList = AE78DFCE1C915D590041AE1F /* Build configuration list for PBXProject "jifenRAC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE78DFCA1C915D590041AE1F;
+			productRefGroup = AE78DFD41C915D590041AE1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE78DFD21C915D590041AE1F /* jifenRAC */,
+				AE78DFEB1C915D590041AE1F /* jifenRACTests */,
+				AE78DFF61C915D590041AE1F /* jifenRACUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE78DFD11C915D590041AE1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE78DFE61C915D590041AE1F /* LaunchScreen.storyboard in Resources */,
+				AE78DFE31C915D590041AE1F /* Assets.xcassets in Resources */,
+				AE78E01D1C916F840041AE1F /* video1.mp4 in Resources */,
+				AE78DFE11C915D590041AE1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE78DFEA1C915D590041AE1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE78DFF51C915D590041AE1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02A167ABCCB5CF0C05D1B524 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0AFA02CE4A7248706E703B8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D2C22FADA35FCC0901088DBA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE78DFCF1C915D590041AE1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE78E0141C915DD70041AE1F /* ViewController.m in Sources */,
+				AE78DFD81C915D590041AE1F /* main.m in Sources */,
+				AE78E0151C915DD70041AE1F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE78DFE81C915D590041AE1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE78DFF11C915D590041AE1F /* jifen_RAC_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE78DFF31C915D590041AE1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE78DFFC1C915D590041AE1F /* jifen_RAC_UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE78DFEE1C915D590041AE1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE78DFD21C915D590041AE1F /* jifenRAC */;
+			targetProxy = AE78DFED1C915D590041AE1F /* PBXContainerItemProxy */;
+		};
+		AE78DFF91C915D590041AE1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE78DFD21C915D590041AE1F /* jifenRAC */;
+			targetProxy = AE78DFF81C915D590041AE1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE78DFDF1C915D590041AE1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE78DFE01C915D590041AE1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE78DFE41C915D590041AE1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE78DFE51C915D590041AE1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE78DFFE1C915D590041AE1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE78DFFF1C915D590041AE1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE78E0011C915D590041AE1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92677EA37C9C43A73E9B7A7A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_PREFIX_HEADER = "/Users/tmp/Desktop/RAC(jifen)/jifen(RAC)/jifen(RAC)/PrefixHeader.pch";
+				INFOPLIST_FILE = "jifen(RAC)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hxy.jifen-RAC-";
+				PRODUCT_NAME = jifenRAC;
+			};
+			name = Debug;
+		};
+		AE78E0021C915D590041AE1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E9D69E5040365F83C5B2CA1 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_PREFIX_HEADER = "/Users/tmp/Desktop/RAC(jifen)/jifen(RAC)/jifen(RAC)/PrefixHeader.pch";
+				INFOPLIST_FILE = "jifen(RAC)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hxy.jifen-RAC-";
+				PRODUCT_NAME = jifenRAC;
+			};
+			name = Release;
+		};
+		AE78E0041C915D590041AE1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "jifen(RAC)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hxy.jifen-RAC-Tests";
+				PRODUCT_NAME = jifenRAC;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jifenRAC.app/jifenRAC";
+			};
+			name = Debug;
+		};
+		AE78E0051C915D590041AE1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "jifen(RAC)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hxy.jifen-RAC-Tests";
+				PRODUCT_NAME = jifenRAC;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jifenRAC.app/jifenRAC";
+			};
+			name = Release;
+		};
+		AE78E0071C915D590041AE1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "jifen(RAC)UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hxy.jifen-RAC-UITests";
+				PRODUCT_NAME = jifenRAC;
+				TEST_TARGET_NAME = "jifen(RAC)";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AE78E0081C915D590041AE1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "jifen(RAC)UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hxy.jifen-RAC-UITests";
+				PRODUCT_NAME = jifenRAC;
+				TEST_TARGET_NAME = "jifen(RAC)";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE78DFCE1C915D590041AE1F /* Build configuration list for PBXProject "jifenRAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE78DFFE1C915D590041AE1F /* Debug */,
+				AE78DFFF1C915D590041AE1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE78E0001C915D590041AE1F /* Build configuration list for PBXNativeTarget "jifenRAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE78E0011C915D590041AE1F /* Debug */,
+				AE78E0021C915D590041AE1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE78E0031C915D590041AE1F /* Build configuration list for PBXNativeTarget "jifenRACTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE78E0041C915D590041AE1F /* Debug */,
+				AE78E0051C915D590041AE1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE78E0061C915D590041AE1F /* Build configuration list for PBXNativeTarget "jifenRACUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE78E0071C915D590041AE1F /* Debug */,
+				AE78E0081C915D590041AE1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE78DFCB1C915D590041AE1F /* Project object */;
+}
