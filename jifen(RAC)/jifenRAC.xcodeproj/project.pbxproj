@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		64FC9E3C5921E3E6F3C3A62C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9D18BB25884048E63905BB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AE5140A51C92BC3900FD6425 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5140A41C92BC3900FD6425 /* MainViewController.m */; };
+		AE5140A91C92C1CF00FD6425 /* milky_way.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE5140A81C92C1CF00FD6425 /* milky_way.jpg */; };
 		AE78DFD81C915D590041AE1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE78DFD71C915D590041AE1F /* main.m */; };
 		AE78DFE11C915D590041AE1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE78DFDF1C915D590041AE1F /* Main.storyboard */; };
 		AE78DFE31C915D590041AE1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE78DFE21C915D590041AE1F /* Assets.xcassets */; };
@@ -39,6 +41,10 @@
 /* Begin PBXFileReference section */
 		2E9D69E5040365F83C5B2CA1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		92677EA37C9C43A73E9B7A7A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AE5140A31C92BC3900FD6425 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		AE5140A41C92BC3900FD6425 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		AE5140A71C92BCB200FD6425 /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		AE5140A81C92C1CF00FD6425 /* milky_way.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = milky_way.jpg; sourceTree = "<group>"; };
 		AE78DFD31C915D590041AE1F /* jifenRAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jifenRAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE78DFD71C915D590041AE1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE78DFE01C915D590041AE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +109,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AE5140A21C92BC0E00FD6425 /* MainController主视图 */ = {
+			isa = PBXGroup;
+			children = (
+				AE5140A81C92C1CF00FD6425 /* milky_way.jpg */,
+				AE5140A31C92BC3900FD6425 /* MainViewController.h */,
+				AE5140A41C92BC3900FD6425 /* MainViewController.m */,
+			);
+			name = "MainController主视图";
+			sourceTree = "<group>";
+		};
+		AE5140A61C92BCA400FD6425 /* Define(宏) */ = {
+			isa = PBXGroup;
+			children = (
+				AE5140A71C92BCB200FD6425 /* Define.h */,
+			);
+			path = "Define(宏)";
+			sourceTree = "<group>";
+		};
 		AE78DFCA1C915D590041AE1F = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +152,7 @@
 		AE78DFD51C915D590041AE1F /* jifen(RAC) */ = {
 			isa = PBXGroup;
 			children = (
+				AE5140A61C92BCA400FD6425 /* Define(宏) */,
 				AE78E0091C915DD70041AE1F /* Controller */,
 				AE78E00C1C915DD70041AE1F /* Model */,
 				AE78E00D1C915DD70041AE1F /* NetService */,
@@ -174,6 +199,7 @@
 		AE78E0091C915DD70041AE1F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AE5140A21C92BC0E00FD6425 /* MainController主视图 */,
 				AE78E0181C9168220041AE1F /* welcome（欢迎页） */,
 			);
 			path = Controller;
@@ -340,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE78DFE61C915D590041AE1F /* LaunchScreen.storyboard in Resources */,
+				AE5140A91C92C1CF00FD6425 /* milky_way.jpg in Resources */,
 				AE78DFE31C915D590041AE1F /* Assets.xcassets in Resources */,
 				AE78E01D1C916F840041AE1F /* video1.mp4 in Resources */,
 				AE78DFE11C915D590041AE1F /* Main.storyboard in Resources */,
@@ -418,6 +445,7 @@
 				AE78E0141C915DD70041AE1F /* ViewController.m in Sources */,
 				AE78DFD81C915D590041AE1F /* main.m in Sources */,
 				AE78E0151C915DD70041AE1F /* AppDelegate.m in Sources */,
+				AE5140A51C92BC3900FD6425 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +591,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hxy.jifen-RAC-";
 				PRODUCT_NAME = jifenRAC;
+				WARNING_CFLAGS = "-Wno-nullability-completeness";
 			};
 			name = Debug;
 		};
@@ -577,6 +606,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hxy.jifen-RAC-";
 				PRODUCT_NAME = jifenRAC;
+				WARNING_CFLAGS = "-Wno-nullability-completeness";
 			};
 			name = Release;
 		};

@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,6 +21,59 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1412" y="412"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="wvy-zB-pTW">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="XGK-Fi-Gfo" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1XL-8K-nUS"/>
+                        <viewControllerLayoutGuide type="bottom" id="jbb-yb-zk0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1he-tb-9Up">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milky_way.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aCC-Rw-MxQ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jbb-yb-zk0" firstAttribute="top" secondItem="aCC-Rw-MxQ" secondAttribute="bottom" id="8H5-Jd-2g7"/>
+                            <constraint firstAttribute="trailing" secondItem="aCC-Rw-MxQ" secondAttribute="trailing" id="Z9z-Zx-TKs"/>
+                            <constraint firstItem="aCC-Rw-MxQ" firstAttribute="leading" secondItem="1he-tb-9Up" secondAttribute="leading" id="Zrd-jV-GZ1"/>
+                            <constraint firstItem="aCC-Rw-MxQ" firstAttribute="top" secondItem="1XL-8K-nUS" secondAttribute="bottom" id="sbw-qJ-f0F"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eXG-F1-sn3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4CL-oA-BIA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.5" y="1177.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qgf-a5-xdX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ulu-qr-N1X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6hE-Ok-rKY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XGK-Fi-Gfo" kind="relationship" relationship="rootViewController" id="Pt8-1j-dZu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Krd-Kf-H3T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="493" y="1178"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="milky_way.jpg" width="1440" height="2017"/>
+    </resources>
 </document>
