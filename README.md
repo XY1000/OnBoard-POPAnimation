@@ -1,2 +1,4 @@
-# jifen-RAC-MVVM-
-使用RAC 和 MAVVM 创建的应用
+# 努力充实自己
+学习使用POP动画，Onboard欢迎界面框架
+学习使用ReactiveCocoa框架实现登录界面
+学习使用Sketch软件设计登录界面，并导出自己所需的图片
