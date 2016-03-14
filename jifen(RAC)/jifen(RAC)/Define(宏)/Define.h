@@ -11,7 +11,7 @@
 
 /**       StoryBoardID             **/
 
-#define StoryID_MainController    @"MainViewController"
+#define StoryID_LoginController    @"LoginViewController"
 
 /**       TableViewCellIdenti      **/
 

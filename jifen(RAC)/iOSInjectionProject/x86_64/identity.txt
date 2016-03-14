@@ -1,0 +1,2 @@
+/Users/tmp/Library/Developer/Xcode/DerivedData/jifenRAC-grnotjahlvzmmkbajdhlfdwdtmuv/Build/Products/Debug-iphonesimulator/jifenRAC.app
+

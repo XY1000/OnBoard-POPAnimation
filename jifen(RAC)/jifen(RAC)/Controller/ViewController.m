@@ -51,7 +51,7 @@
     
     
 //第三页
-    OnboardingContentViewController *thirdPage = [OnboardingContentViewController contentWithTitle:@"MVVM" body:@"ReactiveCocoa 结合 MVVM 使用！" image:[UIImage imageNamed:@"活动页面_分享弹窗_12"] buttonText:@"start Go" action:^{
+    OnboardingContentViewController *thirdPage = [OnboardingContentViewController contentWithTitle:@"Sketch" body:@"使用Sketch 设计图片 再也不用愁了！" image:[UIImage imageNamed:@"活动页面_分享弹窗_12"] buttonText:@"start Go" action:^{
         
         [self transitionAninmation];
         
@@ -67,7 +67,9 @@
     
     
     backgroundVC.allowSkipping = YES;
-    
+    backgroundVC.shouldFadeTransitions = YES;
+    backgroundVC.fadeSkipButtonOnLastPage = YES;
+    backgroundVC.fadePageControlOnLastPage = YES;
     
     @weakify(backgroundVC);
     backgroundVC.skipHandler = ^{
@@ -121,11 +123,11 @@
     rightBottomView.frame = CGRectMake(splitWidth, splitHeight, splitWidth, splitHeight);
     rightBottomView.image = [UIImage imageWithCGImage:[self cutImageWithImage:wholeImg rect:rightBottomView.frame]];
    
-    UIViewController *MainVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:StoryID_MainController];
+    UIViewController *LoginVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:StoryID_LoginController];
 //    MainVC.view.bounds = CGRectMake(0, 0, 0, 0);
-    MainVC.view.alpha = 0;
+    LoginVC.view.alpha = 0;
     
-    [self.view addSubview:MainVC.view];
+    [self.view addSubview:LoginVC.view];
     [self.view addSubview:leftView];
     [self.view addSubview:leftBottomView];
     [self.view addSubview:rightView];
@@ -199,7 +201,7 @@
     };
     
     
-    [MainVC.view pop_addAnimation:MainAnima forKey:@"mainAnima"];
+    [LoginVC.view pop_addAnimation:MainAnima forKey:@"mainAnima"];
     [leftView pop_addAnimation:leftAnima forKey:@"left"];
     [leftBottomView pop_addAnimation:leftBottomAnima forKey:@"leftBottom"];
     [rightView pop_addAnimation:rightAnima forKey:@"right"];
