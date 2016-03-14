@@ -59,7 +59,7 @@
 
     thirdPage.buttonFontSize = 20;
     thirdPage.buttonTextColor = [UIColor flatBlueColor];
-    thirdPage.ClickBtn.backgroundColor = [UIColor flatOrangeColor];
+   // thirdPage.ClickBtn.backgroundColor = [UIColor flatOrangeColor];
 //底部视图
    NSString *path = [[NSBundle mainBundle] pathForResource:@"video1" ofType:@"mp4"];
    NSURL *moveUrl = [NSURL fileURLWithPath:path];
