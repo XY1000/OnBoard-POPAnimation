@@ -17,5 +17,7 @@
 #import "SVProgressHUD.h"
 #import "Chameleon.h"
 #import "EXTScope.h"
+#import "Define(宏)/Define.h"
+
 
 #endif /* PrefixHeader_pch */
