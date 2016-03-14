@@ -14,13 +14,101 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="465" y="442"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="bst-dU-mSq">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="G2r-XN-XQh" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1LH-KX-vMy"/>
+                        <viewControllerLayoutGuide type="bottom" id="M7M-vn-drh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OQ2-cx-l2Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="5W4-65-vPa">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="weg-Rr-avM">
+                                <rect key="frame" x="40" y="225" width="295" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ScF-2K-oHr">
+                                <rect key="frame" x="40" y="305" width="295" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8L-rH-WOh">
+                                <rect key="frame" x="60" y="415" width="255" height="30"/>
+                                <color key="backgroundColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="登陆">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RAC Login" translatesAutoresizingMaskIntoConstraints="NO" id="e2z-6F-cvM">
+                                <rect key="frame" x="100" y="140" width="175" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval 19" translatesAutoresizingMaskIntoConstraints="NO" id="pPg-A0-SbQ">
+                                <rect key="frame" x="246" y="129" width="10" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="WUE-vb-7N4"/>
+                                    <constraint firstAttribute="width" constant="10" id="qwc-Zz-aVj"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ScF-2K-oHr" firstAttribute="height" secondItem="weg-Rr-avM" secondAttribute="height" id="5g9-Pd-Tps"/>
+                            <constraint firstItem="ScF-2K-oHr" firstAttribute="centerX" secondItem="OQ2-cx-l2Y" secondAttribute="centerX" id="6nX-1h-tQA"/>
+                            <constraint firstAttribute="trailing" secondItem="5W4-65-vPa" secondAttribute="trailing" id="Aw1-7V-WIp"/>
+                            <constraint firstItem="weg-Rr-avM" firstAttribute="centerX" secondItem="OQ2-cx-l2Y" secondAttribute="centerX" id="DR8-Ld-jMd"/>
+                            <constraint firstItem="5W4-65-vPa" firstAttribute="top" secondItem="1LH-KX-vMy" secondAttribute="bottom" id="HlZ-j7-jIS"/>
+                            <constraint firstItem="weg-Rr-avM" firstAttribute="top" secondItem="e2z-6F-cvM" secondAttribute="bottom" constant="50" id="J1G-Si-Ujj"/>
+                            <constraint firstItem="M7M-vn-drh" firstAttribute="top" secondItem="5W4-65-vPa" secondAttribute="bottom" id="KsZ-xU-pNo"/>
+                            <constraint firstItem="5W4-65-vPa" firstAttribute="leading" secondItem="OQ2-cx-l2Y" secondAttribute="leading" id="Kwl-7a-sc9"/>
+                            <constraint firstItem="V8L-rH-WOh" firstAttribute="leading" secondItem="OQ2-cx-l2Y" secondAttribute="leading" constant="60" id="Mi7-2g-dcX"/>
+                            <constraint firstAttribute="trailing" secondItem="V8L-rH-WOh" secondAttribute="trailing" constant="60" id="UaS-86-aA1"/>
+                            <constraint firstItem="e2z-6F-cvM" firstAttribute="top" secondItem="pPg-A0-SbQ" secondAttribute="bottom" constant="1" id="V2I-2I-jmt"/>
+                            <constraint firstItem="e2z-6F-cvM" firstAttribute="centerX" secondItem="OQ2-cx-l2Y" secondAttribute="centerX" id="aFP-MJ-1XV"/>
+                            <constraint firstItem="e2z-6F-cvM" firstAttribute="top" secondItem="OQ2-cx-l2Y" secondAttribute="top" constant="140" id="blo-of-aqX"/>
+                            <constraint firstItem="ScF-2K-oHr" firstAttribute="top" secondItem="weg-Rr-avM" secondAttribute="bottom" constant="50" id="dfR-A8-pY0"/>
+                            <constraint firstItem="V8L-rH-WOh" firstAttribute="top" secondItem="ScF-2K-oHr" secondAttribute="bottom" constant="80" id="hHZ-nr-Jyl"/>
+                            <constraint firstItem="V8L-rH-WOh" firstAttribute="centerX" secondItem="OQ2-cx-l2Y" secondAttribute="centerX" id="hc2-by-k2b"/>
+                            <constraint firstItem="weg-Rr-avM" firstAttribute="leading" secondItem="OQ2-cx-l2Y" secondAttribute="leading" constant="40" id="oam-eu-hMk"/>
+                            <constraint firstAttribute="trailing" secondItem="pPg-A0-SbQ" secondAttribute="trailing" constant="119" id="oi1-X3-4Xj"/>
+                            <constraint firstAttribute="trailing" secondItem="weg-Rr-avM" secondAttribute="trailing" constant="40" id="pUE-KX-qqf"/>
+                            <constraint firstItem="ScF-2K-oHr" firstAttribute="width" secondItem="weg-Rr-avM" secondAttribute="width" id="y2q-Uv-nA1"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="dotIMG" destination="pPg-A0-SbQ" id="JgF-ZS-AqU"/>
+                        <outlet property="loginBtn" destination="V8L-rH-WOh" id="qb5-4n-h6c"/>
+                        <outlet property="logoImg" destination="e2z-6F-cvM" id="hJU-D5-d01"/>
+                        <outlet property="password" destination="ScF-2K-oHr" id="MLZ-DF-qqm"/>
+                        <outlet property="userName" destination="weg-Rr-avM" id="mFm-iG-Nir"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iOr-TD-mDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891.5" y="441.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Oval 19" width="12" height="12"/>
+        <image name="RAC Login" width="175" height="35"/>
+        <image name="background" width="375" height="667"/>
+    </resources>
 </document>

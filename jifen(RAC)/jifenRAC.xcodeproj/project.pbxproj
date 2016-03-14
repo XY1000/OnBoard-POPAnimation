@@ -17,6 +17,7 @@
 		AE78E0141C915DD70041AE1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE78E00B1C915DD70041AE1F /* ViewController.m */; };
 		AE78E0151C915DD70041AE1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE78E0101C915DD70041AE1F /* AppDelegate.m */; };
 		AE78E01D1C916F840041AE1F /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AE78E01C1C916F840041AE1F /* video1.mp4 */; };
+		AE9A158C1C969CB2006845A5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A158B1C969CB2006845A5 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		AE78E0101C915DD70041AE1F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AE78E0161C9160430041AE1F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		AE78E01C1C916F840041AE1F /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		AE9A158A1C969CB1006845A5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		AE9A158B1C969CB2006845A5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		CC9D18BB25884048E63905BB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -174,6 +177,7 @@
 		AE78E0091C915DD70041AE1F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AE9A15891C969C92006845A5 /* Login（登陆） */,
 				AE78E0181C9168220041AE1F /* welcome（欢迎页） */,
 			);
 			path = Controller;
@@ -231,6 +235,15 @@
 				AE78E00B1C915DD70041AE1F /* ViewController.m */,
 			);
 			name = "welcome（欢迎页）";
+			sourceTree = "<group>";
+		};
+		AE9A15891C969C92006845A5 /* Login（登陆） */ = {
+			isa = PBXGroup;
+			children = (
+				AE9A158A1C969CB1006845A5 /* LoginViewController.h */,
+				AE9A158B1C969CB2006845A5 /* LoginViewController.m */,
+			);
+			name = "Login（登陆）";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9A158C1C969CB2006845A5 /* LoginViewController.m in Sources */,
 				AE78E0141C915DD70041AE1F /* ViewController.m in Sources */,
 				AE78DFD81C915D590041AE1F /* main.m in Sources */,
 				AE78E0151C915DD70041AE1F /* AppDelegate.m in Sources */,
